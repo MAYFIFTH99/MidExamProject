@@ -19,9 +19,14 @@
             text-align: center;
         }
         .container {
+            display: flex;
             max-width: 800px;
             margin: 20px auto;
             padding: 0 20px;
+        }
+        .section {
+            flex: 1;
+            padding: 20px;
         }
         img {
             max-width: 100%;
@@ -35,6 +40,9 @@
             display: block;
             margin: 20px auto;
         }
+        h3 {
+            margin-top: 40px;
+        }
         p {
             line-height: 1.6;
         }
@@ -45,22 +53,46 @@
         <h1>나의 자기소개</h1>
     </header>
     <div class="container">
-        <img src="profile_picture.jpg" alt="프로필 사진">
-        <h2>안녕하세요, 제 이름은 성민석입니다.</h2>
-        <p>저는 단국대학교에서 산업보안을 전공하고 있습니다.</p>
-        <h3>연락처</h3>
-        <ul>
-            <li>e-mail : alstjr971@naver.com</li>
-            <li>github : mayfifth99.github,.io</li>
-        </ul>
-        <h3>관심사</h3>
-        <ul>
-            <li>Netflix</li>
-            <li>독서</li>
-            <li>코딩</li>
-        </ul>
-        <img src="image2.jpg" alt="두 번째 이미지">
-        <iframe src="https://www.youtube.com/embed/동영상ID" frameborder="0" allowfullscreen></iframe>
+        <div class="section">
+            <img src="profile_picture.jpg" alt="프로필 사진">
+            <h2>안녕하세요, 제 이름은 성민석입니다.</h2>
+            <p>저는 단국대학교에서 산업보안을 전공하고 있습니다.</p>
+            <h3>연락처</h3>
+            <ul>
+                <li>e-mail : alstjr971@naver.com</li>
+                <li>github : mayfifth99.github,.io</li>
+            </ul>
+            <h3>관심사</h3>
+            <ul>
+                <li>Netflix</li>
+                <li>독서</li>
+                <li>코딩</li>
+            </ul>
+        </div>
+        <div class="section">
+            <img src="image2.jpg" alt="두 번째 이미지">
+            <iframe src="https://www.youtube.com/embed/동영상ID" frameborder="0" allowfullscreen></iframe>
+
+            <!-- 개발자 스택 -->
+            <h3>개발자 스택</h3>
+            <ul>
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>JavaScript</li>
+                <li>React</li>
+                <li>Node.js</li>
+                <li>Express</li>
+                <li>MongoDB</li>
+            </ul>
+
+            <!-- 이력 -->
+            <h3>이력</h3>
+            <ul>
+                <li>2020년: 단국대학교 산업보안 학사 졸업</li>
+                <li>2021년: 웹 개발 인턴으로 참여</li>
+                <li>2022년 - 현재: 소프트웨어 회사에서 프론트엔드 개발자로 근무 중</li>
+            </ul>
+        </div>
     </div>
 </body>
 </html>
