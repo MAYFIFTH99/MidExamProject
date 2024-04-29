@@ -2,97 +2,278 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>자기소개서</title>
-    <style>
-        /* CSS 스타일링 */
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-        }
-        header {
-            background-color: #333;
-            color: #fff;
-            padding: 20px;
-            text-align: center;
-        }
-        .container {
-            display: flex;
-            max-width: 800px;
-            margin: 20px auto;
-            padding: 0 20px;
-        }
-        .section {
-            flex: 1;
-            padding: 20px;
-        }
-        img {
-            max-width: 100%;
-            height: auto;
-            display: block;
-            margin: 20px auto;
-        }
-        iframe {
-            max-width: 100%;
-            height: 400px; /* 동영상의 높이 조절 */
-            display: block;
-            margin: 20px auto;
-        }
-        h3 {
-            margin-top: 40px;
-        }
-        p {
-            line-height: 1.6;
-        }
-    </style>
+    <meta property="og:image" content="./images/home.jpg">
+    <meta property="og:title" content="자기소개서">
+    <link rel="shortcut icon" href="images/lemon.ico">
+    <title>성민석</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Introduction</h1>
-    </header>
-    <div class="container">
-        <div class="section">
-            <img src="baekjoon.png" alt="프로필 사진">
-            <h2>안녕하세요, 제 이름은 성민석입니다.</h2>
-            <p>저는 단국대학교에서 산업보안을 전공하고 있습니다.</p>
-            <h3>연락처</h3>
-            <ul>
-                <li>e-mail : alstjr971@naver.com</li>
-                <li>github : mayfifth99.github.io</li>
-            </ul>
-            <h3>관심사</h3>
-            <ul>
-                <li>Netflix</li>
-                <li>독서</li>
-                <li>코딩</li>
-            </ul>
-        </div>
-        <div class="section">
-            <img src="image2.jpg" alt="두 번째 이미지">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/-qmobQzlIDg?si=fIyC8b_gLhfn70QS" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-
-            <!-- 개발자 스택 -->
-            <h3>개발자 스택</h3>
-            <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-                <li>React</li>
-                <li>Node.js</li>
-                <li>Express</li>
-                <li>MongoDB</li>
-            </ul>
-
-            
-            <h3>희망 직종</h3>
-            <ul>
-                <li>백엔드 개발</li>
-                <li>데이터 분석</li>
-                <li>AI 모델 개발</li>
-            </ul>
+    <div class="loading_container">
+        <div class="loading_box">
+            <p class="loading">🍋</p>
+            <p>Loading</p>
         </div>
     </div>
+
+    <header>
+        <h1 class="blind">성민석 자기소개서</h1>
+        <nav>
+            <ul>
+                <li>
+                    <a href="#home">🍋<span class="tooltip-text">Home</span></a>
+                </li>
+                <li>
+                    <a href="#about">🍋<span class="tooltip-text">About</span></a>
+                </li>
+                <li>
+                    <a href="#favorite">🍋<span class="tooltip-text">Favorite</span></a>
+                </li>
+                <li>
+                    <a href="#goal">🍋<span class="tooltip-text">Goal</span></a>
+                </li>
+                <li>
+                    <a href="#contact">🍋<span class="tooltip-text">Contact</span></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <section id="home">
+                <div class="title">
+                    <h1></h1>
+                    <p>안녕하세요 제 이름은 성민석 입니다.</p>
+                </div>
+                <div class="scroll">
+                    <a href="#about"><span></span></a>
+                    <p>Scroll</p>
+                </div>
+            </section>
+
+            <section id="about">
+                <div class="category">
+                    <h2>about</h2>
+                </div>
+
+                <div class="about_profile">
+                    <div class="img_box">
+                        <img src="images\about.jpg" alt="프로필 사진">
+                    </div>
+                    <div class="introduction">
+                        <ul class="desc_box1">
+                            <li>
+                                <div>
+                                    <p>성민석</p>
+                                    <p>이름</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>1999.05.05</p>
+                                    <p>생년월일</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div>
+                                    <p>용인</p>
+                                    <p>거주지</p>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="desc_box2">
+                            <span>010-4069-8376</span>
+                            <span>📱</span>
+                        </div>
+                        <div class="desc_box2">   
+                            <span>alstjr971@naver.com</span>
+                            <span>📧</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="property">
+                    <div class="property_box">
+                        <div class="poster">
+                            <h2>백엔드</h2>
+                            <figure class="item">
+                                <img src="images\about.jpg" alt="">
+                                <p>희망 진로</p>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="property_box">
+                        <div class="poster">
+                            <h2>산업보안</h2>
+                            <figure class="item">
+                                <img src="images\about.jpg" alt="">
+                                <p>전공</p>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="property_box">
+                        <div class="poster">
+                            <h2>ESTJ</h2>
+                            <figure class="item">
+                                <img src="\images\mbti.png" alt="">
+                                <p>MBTI</p>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="property_box">
+                        <div class="poster butterfly">
+                            <figure class="item">
+                                <img src="\images\mbti.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="property_box">
+                        <div class="poster butterfly">
+                            <figure class="item">
+                                <img src="\images\mbti.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="property_box">
+                        <div class="poster butterfly">
+                            <figure class="item">
+                                <img src="\images\mbti.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="property_box">
+                        <div class="poster butterfly">
+                            <figure class="item">
+                                <img src="\images\mbti.png" alt="">
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+            </section>
+    
+            <section id="favorite">
+                <div class="category">
+                    <h2>favorite</h2>
+                    <p>좋아하는 것</p>
+                </div>
+                <div class="slide_warp">
+                    <ul class="slides">
+                        <li>
+                            <div class="slide_img_box">
+                                <img src="\images\mbti.png" alt="방탈출">
+                            </div>
+                            <div class="slide_text_box">
+                                <span>01</span>
+                                <p class="title">기타</p>
+                                <p class="desc">현재 열심히 배우는 중<br> 스트레스 풀기 좋아요!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slide_img_box">
+                                <img src="\images\favorite_coffee.jpg" alt="방탈출">
+                            </div>
+                            <div class="slide_text_box">
+                                <span>02</span>
+                                <p class="title">커피☕</p>
+                                <p class="desc">
+                                    커피와 함께하는 개발은 낭만이 있다..
+                                </p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slide_img_box">
+                                <img src="\images\favorite_coffee.jpg" alt="방탈출">
+                            </div>
+                            <div class="slide_text_box">
+                                <span>03</span>
+                                <p class="title">동물🐱</p>
+                                <p class="desc">동물 애호가</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slide_img_box">
+                                <img src="\images\favorite_food.gif" alt="방탈출">
+                            </div>
+                            <div class="slide_text_box">
+                                <span>04</span>
+                                <p class="title">맛집 탐방🍽️</p>
+                                <p class="desc">맛있는 안주와 맥주 한 잔..!</p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="slide_img_box">
+                                <img src="\images\favorite_ott.gif" alt="방탈출">
+                            </div>
+                            <div class="slide_text_box">
+                                <span>07</span>
+                                <p class="title">OTT 시청🎞️</p>
+                                <p class="desc">휴식엔 NETFLIX !</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <p class="controls">
+                    <span class="prev">🌹</span>
+                    <span class="next">🌹</span>
+                </p>
+            </section>
+
+            <section id="goal">
+                <div class="category">
+                    <h2>goal</h2>
+                    <p>위코드에서 저는..</p>
+                </div>
+                <ul class="goal_box">
+                    <li class="goal_detail goal_detail_1">
+                        <div class="goal_detaile_imgbox">
+                        </div>
+                        <div class="goal_detaile_desc">
+                            <p>#코드 능력 향상</p>
+                        </div>
+                    </li>
+                    <li class="goal_detail goal_detail_2">
+                        <div class="goal_detaile_imgbox">
+                        </div>
+                        <div class="goal_detaile_desc">
+                            <p>#흥미 찾기</p>
+                            <p>더 재밌게 코드<br>공부하기</p>
+                        </div>
+                    </li>
+                    <li class="goal_detail goal_detail_3">
+                        <div class="goal_detaile_imgbox">
+                        </div>
+                        <div class="goal_detaile_desc">
+                            <p>#함께하고싶은<br>개발자로 성장하기</p>
+                        </div>
+                    </li>
+                </ul>
+            </section>
+
+            <section id="contact">
+                <div class="container">
+                    <div class="category">
+                        <h2>contact</h2>
+                    </div>
+                    <div class="link">
+                        <ul>
+                            <li><a href="https://www.instagram.com/mayfifth99/" target="_blank">Instagram</a></li>
+                            <li><a href="https://mayfifth99.tistory.com/" target="_blank">tistory</a></li>
+                            <li><a href="https://github.com/MAYFIFTH99/" target="_blank">Github</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    
+
+    <script src="js/loading.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
