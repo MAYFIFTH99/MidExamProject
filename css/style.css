@@ -251,9 +251,9 @@ header a:hover .tooltip-text {
 /* About */
 #about {
     position: relative;
-    background-image: url("../images/about.jpg");
+    background-image: url("../images/bluesky.png");
     background-size: cover;
-    background-color: #AB88A0;
+    background-color: #22077c;
 }
 
 #about .img_box {
