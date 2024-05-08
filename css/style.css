@@ -141,7 +141,7 @@ header a:hover .tooltip-text {
 
 /* Home */
 #home {
-    background-image: url("../images/home.jpg");
+    background-image: url("../images/skyblue.jpg");
     background-size: cover;
     background-attachment: fixed;
     background-position: 0 -120px;
@@ -250,10 +250,9 @@ header a:hover .tooltip-text {
 
 /* About */
 #about {
+    background-color: #13a0af;
     position: relative;
-    background-image: url("../images/bluesky.png");
     background-size: cover;
-    background-color: #22077c;
 }
 
 #about .img_box {
